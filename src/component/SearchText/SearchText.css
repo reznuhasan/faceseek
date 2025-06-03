@@ -1,0 +1,13 @@
+.search-text-component{
+    color:#FFFFFF;
+    font-weight: bold;
+    padding-left: 104px;
+}
+.result-text{
+    color:#12B981;
+}
+@media (max-width: 768px) {
+    .search-text-component{
+        padding-left: 8px;
+    }
+}

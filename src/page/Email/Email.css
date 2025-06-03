@@ -1,0 +1,18 @@
+.email-container{
+    padding: 20px 100px;
+}
+.browser-all-card{
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+    .email-container{
+        padding:8px 0px;
+    }
+    .browser-all-card{
+        display: flex;
+        gap:10px;
+        flex-wrap: wrap;
+    }
+}

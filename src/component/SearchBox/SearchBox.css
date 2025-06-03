@@ -1,7 +1,7 @@
 .search-container {
     position: relative;
     width: 732px;
-    height: 42;
+    height: 42px;
     margin: 20px auto;
     background-color: #1b1b1f; /* dark background */
     border-radius: 10px;
@@ -29,6 +29,6 @@
   }
   @media (max-width: 768px) {
     .search-container {
-        width: 365px;
+        width: 100%;
     }
   }

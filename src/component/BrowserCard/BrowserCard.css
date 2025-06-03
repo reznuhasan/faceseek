@@ -1,0 +1,32 @@
+.browser-card-component{
+    width: 245px;
+    height: 82px;
+    background-color: #111825;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding-left: 7px;
+    border: 2px solid #1d2533;
+}
+.browser-content .browser-name{
+    font-size: 18px;
+    color:#ffff;
+}
+.browser-content .browser-content-type{
+    font-size: 10px;
+    color:#3c638a;
+    text-transform: capitalize;
+}
+@media (max-width: 768px) {
+    .browser-card-component{
+        width: 177px;
+        height: 50px;
+    }
+    .browser-content .browser-name{
+        font-size: 10px;
+    }
+    .browser-content .browser-content-type{
+        font-size: 6px;
+    }
+  }
