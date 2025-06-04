@@ -1,0 +1,130 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    background-color: #0e0e11;
+  }
+  
+  .breachcard {
+    background-color: #1a1a1d;
+    color: #e0e0e0;
+    border-radius: 1rem;
+    width: 300px;
+    height: 203px;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+ 
+  
+  .breachcard-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .breachcard-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  .breachcard-category {
+    font-size: 0.85rem;
+    color: #999;
+  }
+  
+  .breachcard-arrow {
+    margin-left: auto;
+    font-size: 1.2rem;
+    color: #00ffb7;
+  }
+  
+  .breachcard-description {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+  
+  .breachcard-compromised {
+    font-size: 0.85rem;
+  }
+  
+  .breachcard-compromised ul {
+    display: flex;
+    margin-top: 8px;
+    gap:25px;
+    font-size: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        background-color: #0e0e11;
+      }
+      
+      .breachcard {
+        background-color: #1a1a1d;
+        color: #e0e0e0;
+        border-radius: 1rem;
+        width: 190px;
+        height: 125px;
+        padding:20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+     
+      
+      .breachcard-header {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 0rem;
+      }
+      .breachcard-header h3 {
+        margin-bottom: -10px;
+      }
+      
+      .breachcard-logo {
+        width: 30px;
+        height: 30px;
+      }
+      
+      .breachcard-category {
+        font-size: 6px;
+        color: #999;
+      }
+      
+      .breachcard-arrow {
+        margin-left: auto;
+        font-size: 1.2rem;
+        color: #00ffb7;
+      }
+      
+      .breachcard-description {
+        font-size: 6px;
+        margin-bottom: 0.3rem;
+      }
+      
+      .breachcard-compromised {
+        font-size: 6px;
+      }
+      
+      .breachcard-compromised ul {
+        display: flex;
+        margin-top: 4px;
+        gap:15px;
+        font-size: 6px;
+      }
+  }
+  /* .breachcard-compromised li{
+    list-style: none;
+  } */
+
+  

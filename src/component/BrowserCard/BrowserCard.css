@@ -23,6 +23,10 @@
         width: 177px;
         height: 50px;
     }
+    .browser-logo img{
+       width: 30px;
+       height: 30px;
+    }
     .browser-content .browser-name{
         font-size: 10px;
     }

@@ -37,7 +37,7 @@
 }
 @media (max-width: 768px) {
     .email-container{
-        padding:8px 0px;
+        padding:8px 12px;
     }
     .browser-all-card{
         display: flex;

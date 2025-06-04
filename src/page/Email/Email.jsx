@@ -3,6 +3,7 @@ import { browserListArr } from '../../DB/BrowserList';
 import BrowserCard from '../../component/BrowserCard/BrowserCard';
 import "./Email.css"
 import avatar from "../../assets/EmailAvatar.png"
+import BreachCards from '../../component/BreachCard/BreachCard';
 const Email = () => {
     const allBrowser=browserListArr;
 
@@ -23,6 +24,7 @@ const Email = () => {
             <img src={avatar} alt="" />
         </div>
       </div>
+      <BreachCards/>
     </div>
   )
 }
