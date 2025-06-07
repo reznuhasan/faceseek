@@ -46,11 +46,6 @@ export const browserListArr=[
     },
     {
         img:"https://ik.imagekit.io/v4fhgjnfk/image.png?updatedAt=1748987237401",
-        name:"Suzuri",
-        content:"Business",
-    },
-    {
-        img:"https://ik.imagekit.io/v4fhgjnfk/image.png?updatedAt=1748987237401",
         name:"Coroflot",
         content:"Art",
     },
