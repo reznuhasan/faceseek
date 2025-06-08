@@ -15,6 +15,8 @@
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+    border-top-right-radius: 90px;
 
 }
 
@@ -37,11 +39,29 @@
     font-size: 0.85rem;
     color: #999;
 }
-
+.breachcard-box{
+    border: 5px solid #0a0914;
+    position: absolute;
+    top:0;
+    right: 0;
+    background-color: #0a0914;
+    border-bottom-left-radius: 20px;
+}
 .breachcard-arrow {
     margin-left: auto;
     font-size: 1.2rem;
-    color: #00ffb7;
+    background-color: #00a36d;
+    width: 50px;
+    height: 50px;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 15px;
+}
+.breachcard h3{
+    font-size: 14px;
 }
 
 .breachcard-description {

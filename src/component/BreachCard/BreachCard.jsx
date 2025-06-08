@@ -9,7 +9,9 @@ const BreachCard = ({breach}) => {
         <h3>{breach.name}</h3>
         <span className="breachcard-category">{breach.category}</span>
       </div>
+      <div className='breachcard-box'>  
       <div className="breachcard-arrow">↗</div>
+      </div>
     </div>
     <p className="breachcard-description">{breach.description}</p>
     <div className="breachcard-compromised">
