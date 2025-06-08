@@ -5,6 +5,7 @@ import "./Email.css"
 import avatar from "../../assets/EmailAvatar.png"
 import avatar1 from "../../assets/GirlAvatar1.png"
 import BreachCards from '../../component/BreachCard/BreachCards';
+import Blogs from '../../component/Blogs/Blogs';
 const Email = () => {
   const allBrowser = browserListArr;
 
@@ -36,6 +37,7 @@ const Email = () => {
         </div>
       </div>
       <BreachCards />
+      <Blogs/>
     </div>
   )
 }

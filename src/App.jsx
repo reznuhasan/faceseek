@@ -10,7 +10,7 @@ function App() {
     <>
     <Header/>
     <SearchBar/>
-    <SearchText/>
+    <SearchText content1={"Search"} content2={"Result"} padding={104}/>
     <Email/>
     </>
   )
