@@ -6,11 +6,13 @@ import avatar from "../../assets/EmailAvatar.png"
 import avatar1 from "../../assets/GirlAvatar1.png"
 import BreachCards from '../../component/BreachCard/BreachCards';
 import Blogs from '../../component/Blogs/Blogs';
+import SearchText from '../../component/SearchText/SearchText';
 const Email = () => {
   const allBrowser = browserListArr;
 
   return (
     <div className='email-container'>
+      <SearchText content1={"Search"} content2={"Result"}/>
       <div className='browser-all-card'>
         {
           allBrowser.map((browser,id) => <BrowserCard key={id} browser={browser} />)
