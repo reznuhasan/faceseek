@@ -13,7 +13,7 @@ const Email = () => {
     <div className='email-container'>
       <div className='browser-all-card'>
         {
-          allBrowser.map(browser => <BrowserCard browser={browser} />)
+          allBrowser.map((browser,id) => <BrowserCard key={id} browser={browser} />)
         }
       </div>
       <div className='email-alert-part'>
