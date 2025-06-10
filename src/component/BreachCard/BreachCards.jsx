@@ -12,7 +12,7 @@ const breaches = [
     compromised: ["Email addresses", "IP addresses", "Names", "Passwords"]
   },
   {
-    logo: "https://ik.imagekit.io/v4fhgjnfk/image.png?updatedAt=1748987237401",
+    logo: "https://ik.imagekit.io/v4fhgjnfk/image%20(1).png?updatedAt=1749547456420",
     name: "Vimeo",
     category: "Video",
     description:
@@ -20,7 +20,7 @@ const breaches = [
     compromised: ["Email addresses", "IP addresses", "Names", "Passwords"]
   },
   {
-    logo: "https://ik.imagekit.io/v4fhgjnfk/image.png?updatedAt=1748987237401",
+    logo: "https://ik.imagekit.io/v4fhgjnfk/image%20(3).png?updatedAt=1749547594554",
     name: "Opencollective",
     category: "Finance",
     description:
@@ -28,7 +28,7 @@ const breaches = [
     compromised: ["Email addresses", "IP addresses", "Names", "Passwords"]
   },
   {
-    logo: "https://ik.imagekit.io/v4fhgjnfk/image.png?updatedAt=1748987237401",
+    logo: "https://ik.imagekit.io/v4fhgjnfk/image%20(4).png?updatedAt=1749547747909",
     name: "ok.ur",
     category: "Social",
     description:
