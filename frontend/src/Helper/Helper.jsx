@@ -56,8 +56,29 @@ export const markdownComponent = {
     ),
     blockquote: ({ node, ...props }) => (
         <blockquote
-            className="border-l-4 border-gray-400 pl-4 italic text-gray-600 bg-gray-50 p-3 rounded"
+            style={{
+                borderLeft: '4px solid gray',
+                paddingLeft: '1em',
+                fontStyle: 'italic',
+                color: '#ccc',
+                borderRadius: '6px',
+                margin: '1em 0'
+            }}
             {...props}
         />
-    )
+    ),
+    img: ({ node, ...props }) => (
+        <img
+            style={{
+                maxWidth: '100%',
+                borderRadius: '8px',
+                marginTop: '1em',
+                marginBottom: '1em'
+            }}
+            alt={props.alt}
+            {...props}
+        />
+    ),
+
+
 }
