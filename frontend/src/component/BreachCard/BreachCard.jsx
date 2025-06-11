@@ -15,7 +15,7 @@ const BreachCard = ({breach}) => {
     </div>
     <p className="breachcard-description">{breach.description}</p>
     <div className="breachcard-compromised">
-      <strong>Compromised Data</strong>
+      <strong><span className='breachcard-green'>Compromised</span> Data</strong>
       <ul>
         {breach.compromised.map((item, index) => (
          <li key={index}>{item}</li>

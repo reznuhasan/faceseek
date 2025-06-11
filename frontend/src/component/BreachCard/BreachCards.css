@@ -46,17 +46,17 @@
     border-bottom-left-radius: 15px;
 }
 .breachcard-arrow {
-    margin-left: auto;
-    font-size: 1.5rem;
+  margin-left: auto;
+    font-size: 3rem;
     background-color: #00a36d;
     width: 50px;
     height: 50px;
-    color:white;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-  
     border-radius: 15px;
+    padding-bottom: 10px;
 }
 .breachcard h3{
     font-size: 14px;
@@ -76,6 +76,9 @@
     margin-top: 8px;
     gap: 20px;
     font-size: 6px;
+}
+.breachcard-green{
+    color:#00a36d;
 }
 
 /* .compromised-circle{
@@ -104,7 +107,7 @@
     }
 
     .breachcard-box{
-        border: 7px solid #0a0914;
+        border: 5px solid #0a0914;
         position: absolute;
         top:0;
         right: 0;
@@ -113,15 +116,9 @@
     }
     .breachcard-arrow {
         margin-left: auto;
-        font-size: 1.2rem;
-        background-color: #00a36d;
+        font-size: 2rem;
         width: 30px;
         height: 30px;
-        color:white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      
         border-radius: 10px;
     }
 
@@ -147,11 +144,6 @@
         color: #999;
     }
 
-    .breachcard-arrow {
-        margin-left: auto;
-        font-size: 1.2rem;
-        color: #00ffb7;
-    }
 
     .breachcard-description {
         font-size: 6px;
