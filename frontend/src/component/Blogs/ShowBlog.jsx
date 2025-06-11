@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw'; // ← Import this
 import { markdownComponent } from '../../Helper/Helper';
+import remarkGfm from 'remark-gfm';
 
 
 const ShowBlog = () => {
@@ -42,6 +43,8 @@ const ShowBlog = () => {
             <ReactMarkdown
                 rehypePlugins={[rehypeRaw]} // ← Enable raw HTML
                 components={markdownComponent}
+                remarkPlugins={[remarkGfm]}
+
 
             >{blog.Description}</ReactMarkdown>
         </div>

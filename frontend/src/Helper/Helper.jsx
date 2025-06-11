@@ -5,8 +5,23 @@ export const markdownComponent = {
     p: ({ node, ...props }) => (
         <p style={{ color: 'whitesmoke' }} {...props} />
     ),
+    h2: ({ node, ...props }) => (
+        <h2 style={{ color: 'white' }} {...props} />
+    ),
     h3: ({ node, ...props }) => (
         <h3 style={{ color: 'white' }} {...props} />
+    ),
+    h4: ({ node, ...props }) => (
+        <h4 style={{ color: 'white' }} {...props} />
+    ),
+    h5: ({ node, ...props }) => (
+        <h5 style={{ color: 'white' }} {...props} />
+    ),
+    h6: ({ node, ...props }) => (
+        <h6 style={{ color: 'white' }} {...props} />
+    ),
+    h1: ({ node, ...props }) => (
+        <h1 style={{ color: 'white' }} {...props} />
     ),
     u: ({ node, ...props }) => (
         <u style={{ textDecoration: 'underline', fontStyle: 'italic', color: 'gold' }} {...props} />
@@ -39,4 +54,10 @@ export const markdownComponent = {
     a: ({ node, ...props }) => (
         <a style={{ color: 'deepskyblue', textDecoration: 'underline' }} target="_blank" rel="noopener noreferrer" {...props} />
     ),
+    blockquote: ({ node, ...props }) => (
+        <blockquote
+            className="border-l-4 border-gray-400 pl-4 italic text-gray-600 bg-gray-50 p-3 rounded"
+            {...props}
+        />
+    )
 }
