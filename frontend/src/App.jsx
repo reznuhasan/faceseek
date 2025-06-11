@@ -21,7 +21,7 @@ function App() {
           element:<Email/>
         },
         {
-          path:"/blog/:id",
+          path:"/blog/:Slug",
           element:<ShowBlog/>
         }
       ])

@@ -1,9 +1,13 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw'; // ← Import this
+import { markdownComponent } from '../../Helper/Helper';
+
 
 const ShowBlog = () => {
-    const { id } = useParams();
+    const { Slug } = useParams();
     const [blog, setBlog] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -11,10 +15,9 @@ const ShowBlog = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://localhost:1337/api/seo-contents');
+                const response = await axios.get('https://refined-thrill-26de1ae197.strapiapp.com/api/seo-contents?populate=image');
                 const blogs = response.data.data;
-
-                const foundBlog = blogs.find(blog => blog.id === parseInt(id));
+                const foundBlog = blogs.find(blog => blog.Slug === Slug);
                 if (foundBlog) {
                     setBlog(foundBlog);
                 } else {
@@ -28,15 +31,19 @@ const ShowBlog = () => {
         };
 
         fetchData();
-    }, [id]);
+    }, [Slug]);
 
     if (loading) return <div>Loading...</div>;
     if (error) return <div>{error}</div>;
 
     return (
         <div className='show-blog-container'>
-            <h2 className='show-blog-title'>{blog.title}</h2>
-            <p className='show-blog-desc'>{blog.description?.[0]?.children?.[0]?.text ?? 'No description available.'}</p>
+            <h2 className='show-blog-title'>{blog.Title}</h2>
+            <ReactMarkdown
+                rehypePlugins={[rehypeRaw]} // ← Enable raw HTML
+                components={markdownComponent}
+
+            >{blog.Description}</ReactMarkdown>
         </div>
     );
 };

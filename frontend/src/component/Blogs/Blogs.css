@@ -1,62 +1,84 @@
-.blogs-container{
-    margin:30px 0;
+.blogs-container {
+    margin: 30px 0;
 }
-.blogs{
+
+.blogs {
     display: flex;
     flex-wrap: wrap;
-    gap:10px;
+    gap: 10px;
     margin-top: 20px;
 }
-.blog-item{
-    width: 520px;
+
+.blog-item {
+    width: 527px;
     background-color: #1A1A1D;
-    padding:15px 30px;
-    color:white;
+    padding: 15px 30px;
+    color: white;
     border-radius: 10px;
 }
-.blog-item h1{
+
+.blog-item h1 {
     color: white;
     text-transform: capitalize;
     cursor: pointer;
     text-decoration: none;
     margin-bottom: 10px;
 }
-.blog-item p{
+
+.blog-item p {
     color: whitesmoke;
     margin-bottom: 10px;
 }
-.blog-item img{
+
+.blog-item img {
     width: 100%;
+    height: 150px;
 }
-.show-blog-container{
+
+.show-blog-container {
     padding: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
-.show-blog-container .show-blog-title{
+
+.show-blog-container .show-blog-title {
     text-transform: capitalize;
     color: white;
     font-size: 30px;
     margin-bottom: 15px;
-} 
-.show-blog-container .show-blog-desc{
+}
+
+.show-blog-container .show-blog-desc {
     text-transform: capitalize;
     color: whitesmoke;
     font-size: 20px;
-} 
+}
+
 @media (max-width: 768px) {
-    .blog-item{
+    .blog-item {
         width: 350px;
         padding: 20px;
-        color:white;
+        color: white;
         border-radius: 10px;
     }
-    .blog-item h1{
+
+    .blog-item h1 {
         color: white;
         text-transform: capitalize;
         font-size: 18px;
         cursor: pointer;
     }
-    .blog-item p{
+
+    .blog-item p {
         color: whitesmoke;
         font-size: 15px;
+    }
+
+    .show-blog-container {
+        padding: 20px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
     }
 }

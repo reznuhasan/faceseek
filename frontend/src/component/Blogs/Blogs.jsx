@@ -8,7 +8,7 @@ const Blogs = () => {
     const [blogs,setBlogs]=useState([])
     useEffect(()=>{
         const fetchData=async()=>{
-            const seo_content = await axios.get('http://localhost:1337/api/seo-contents')
+            const seo_content = await axios.get('https://refined-thrill-26de1ae197.strapiapp.com/api/seo-contents?populate=image')
             setBlogs(seo_content.data.data)
         }
         fetchData()
