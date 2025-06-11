@@ -34,3 +34,21 @@
         font-size: 6px;
     }
   }
+
+  @media (max-width: 390px) {
+    .browser-card-component{
+        width: 160px;
+        height: 50px;
+        border-radius: 10px;
+    }
+    .browser-logo img{
+       width: 30px;
+       height: 30px;
+    }
+    .browser-content .browser-name{
+        font-size: 10px;
+    }
+    .browser-content .browser-content-type{
+        font-size: 6px;
+    }
+  }
